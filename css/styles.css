@@ -1,0 +1,268 @@
+html
+{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+label{
+    font-size: 1.5rem;
+    display: block;
+}
+
+input
+{
+    border-radius: 5px;
+    border:1px solid black;
+    width: 40vw;
+    height: 40px;
+    font-size: 2rem;
+    text-align: center;
+   
+}
+
+a
+{
+    color:black;
+    text-decoration-color:rgb(126, 126, 126);
+}
+
+a:hover
+{
+    text-shadow: 0.1px 0.1px 0.1px black;
+}
+
+h2{
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+/* select
+{
+    background-color: white;
+    border-radius: 5px;
+    height: 50px;
+} */
+
+select option
+{
+    font-size: 1rem;
+    padding: 0;
+}
+input:focus
+{
+   border:1px solid rgb(124, 124, 124);
+   outline:none;
+}
+
+button,select
+{
+    background-color: white;
+    border:1px solid black;
+    border-radius: 5px;
+    width: 20vw;
+    height: 5vh;
+    font-size: 1.5rem;
+    transition: ease-in-out 1s;
+}
+
+select
+{
+    height: 42px;
+}
+
+button:hover,input:hover,input:focus,select:hover
+{
+    transition-duration: 0.3s;
+    background-color: black;
+    color:white;
+}
+
+.paginacion
+{
+   text-align: center;
+   color:rgb(17, 106, 165);
+   
+}
+
+.logo
+{
+    margin: auto;
+}
+
+.title
+{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-weight: 400;
+}
+
+.contenedor
+{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu
+{
+    width: 20%;
+    height: 90vh;
+    margin: auto;
+    background-color: white;
+    margin-top: 7px;
+}
+
+
+
+.pagina
+{
+    width: 70%;
+    height: 90vh;
+    margin: auto;
+    background-color: white;
+    margin-top: 7px;
+}
+
+.principal
+{
+    display: flex;
+}
+
+/*barra de búsqueda y filtrado*/
+.search_filter
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+/*desactivar visibilidad pagina stock*/
+.stock-disable
+{
+    display: none;
+}
+
+/*pagina stock listado*/
+.stock
+{
+    height: 90%;
+}
+.productos
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+}
+.productos__encabezado{
+    height: 90%;
+}
+.productos__table
+{
+    width: 100%;
+}
+/*table productos*/
+/*encabezados de la lista de productos*/
+.productos__encabezado th:nth-child(1)
+{
+width: 15%;
+text-align: center;
+}
+.productos__encabezado th:nth-child(3)
+{
+    width: 25%;
+}
+
+.productos__encabezado th:nth-child(3)
+{
+    width: 25%;
+}
+.productos__encabezado th:nth-child(5),th:nth-child(6),th:nth-child(7)
+{
+width: 5%;
+}
+
+
+
+table th
+{
+    border:1px solid black;
+    padding: 0;
+    margin:0;
+
+}
+
+table tr:hover{
+    background-color: rgba(33, 19, 23, 0.1);
+}
+/*datos*/
+table  td
+{
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 0.7rem;
+    
+}
+
+
+.stock__total
+{
+   width: 100%;
+   display: flex;
+    
+}
+.stock__total--item
+{
+    margin: auto;
+    width: 30%;
+}
+.stock__total--item label
+{
+    display: block;
+    width: 200px;
+
+}
+.stock__total--item input
+{
+    width: 60%;
+}
+/*-------------------------------------*/
+
+/******************************************************/
+/*************stock************************/
+/*1-ingreso/alta*/
+.stock__alta
+{
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stock__alta--item
+{
+    margin:3%;
+}
+
+
+
+form
+{
+    width: 100%;
+    height: 100%;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+}
+/*2-egreso*/
+
+
