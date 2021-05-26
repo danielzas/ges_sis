@@ -84,6 +84,15 @@ button:hover,input:hover,input:focus,select:hover
    color:rgb(17, 106, 165);
    
 }
+.pagina ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.paginacion ul li{
+    list-style: none;
+    margin:5px;
+}
 
 .logo
 {
@@ -112,7 +121,7 @@ button:hover,input:hover,input:focus,select:hover
 
 .menu
 {
-    width: 20%;
+    width: 15%;
     height: 90vh;
     margin: auto;
     background-color: white;
@@ -123,7 +132,7 @@ button:hover,input:hover,input:focus,select:hover
 
 .pagina
 {
-    width: 70%;
+    width: 80%;
     height: 90vh;
     margin: auto;
     background-color: white;
@@ -171,26 +180,27 @@ button:hover,input:hover,input:focus,select:hover
 }
 /*table productos*/
 /*encabezados de la lista de productos*/
-.productos__encabezado th:nth-child(1)
+/* .productos__encabezado th:nth-child(1)
 {
-width: 15%;
+width: auto;
 text-align: center;
-}
+} */
 .productos__encabezado th:nth-child(3)
 {
-    width: 25%;
+    width: 20%;
 }
 
-.productos__encabezado th:nth-child(3)
-{
-    width: 25%;
-}
-.productos__encabezado th:nth-child(5),th:nth-child(6),th:nth-child(7)
+
+.productos__encabezado th:nth-child(5),th:nth-child(6),th:nth-child(7),th:nth-child(8)
 {
 width: 5%;
 }
 
-
+.productos__encabezado th
+{
+width: auto;
+text-align: center;
+}
 
 table th
 {
@@ -206,6 +216,7 @@ table tr:hover{
 /*datos*/
 table  td
 {
+    width: auto;
     text-align: center;
     border-bottom: 1px solid black;
     padding: 0.7rem;

@@ -39,6 +39,9 @@ let table = document.getElementById("table");
 
 function mostrarResultados() {
   limpiarTabla();
+ /*  document.getElementById('paginacionLista').innerHTML='';
+  let art_PorPagina=3;
+  let num_Paginas=0; */
   let row; //fila de una tabla
   let data; //campo de una tabla
   let info; //texto de un data
@@ -48,6 +51,7 @@ function mostrarResultados() {
     total = 0;
   if (conexion.readyState == 4) {
     var arr = JSON.parse(conexion.responseText);
+   /*  num_Paginas=Math.ceil(arr.length / art_PorPagina); *///calcular numero de paginas
     while (c < arr.length) {
       cantidad++;
       row = document.createElement("tr");
@@ -84,11 +88,25 @@ function mostrarResultados() {
     //determinar un sitio donde escribir el mensaje
     /* table.innerHTML= "Cargando..."; */
   }
-
+  dibujarList(num_Paginas);
   document.getElementById("stock_cantidad").value = cantidad;
   document.getElementById("stock_reservado").value = reservado;
   document.getElementById("stock_total").value = cantidad - reservado;
 }
+
+/* function dibujarList(num)
+{
+  let c=1;
+  let lista=document.getElementById('paginacionLista');
+  let elemento_lista=document.createElement('li');
+  while (c <= num)
+  {
+    let num=document.createTextNode(c);
+    elemento_lista.appendChild(num);
+    lista.appendChild(elemento_lista);
+    c++;
+  }
+} */
 
 function limpiarTabla() {
   let c = 1;

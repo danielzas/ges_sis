@@ -22,7 +22,7 @@
             Stock
             <ul>
               <li><a href="stock_info.php" >Info</a></li>
-              <li><a href="stock_movimientos.php">Movimientos</a></li>
+              <li><a href="stock_mov.html">Movimientos</a></li>
               <li><a href="stock_info.php">ABM</a></li>
             </ul>
           </li>

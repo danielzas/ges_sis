@@ -68,14 +68,25 @@
               <th>SN</th>
               <th>Tipo</th>
               <th>Reservado</th>
+              <th>Prestado</th>
             </tr>
             <?php
             /*php*/
             include 'stock_info_listar_articulos.php';
             ?>
           </table>
-          <div class="paginacion">
-            1
+          <div class="paginacion" id="paginacion">
+          <ul id="paginacionLista">
+            <?php
+            if (isset($num_paginas)) {
+              $p = 1;
+              while ($p <= $num_paginas) {
+                echo '<li><a href="stock_info.php?pagina='.$p.'">'.$p.'</a></li>';
+                $p++;
+              }
+            }
+            ?>
+            </ul>
           </div>
         </div>
         <div class="stock__total">
