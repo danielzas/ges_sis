@@ -22,7 +22,7 @@
           <ul>
             <li>Info
             </li>
-            <li><a href="stock_mov.html">Movimientos</a></li>
+            <li><a href="stock_movimientos.php">Movimientos</a></li>
             <li><a href="stock_abm.php">ABM</a></li>
           </ul>
         </li>

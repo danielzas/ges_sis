@@ -277,3 +277,44 @@ form
 /*2-egreso*/
 
 
+/*******movimientos*****************/
+.movimientos
+{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+.movimientos--title
+{
+    margin:auto;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+
+.movimientos--item
+{
+    width: 100%;
+  display: flex;
+  margin: 0 auto;
+   
+}
+
+.movimientos--item input
+{
+  width: 100%;
+  margin:auto;
+   
+}
+
+.item--col
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
