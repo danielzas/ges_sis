@@ -5,10 +5,10 @@ $bd = new bd();
 
 if (isset($_GET['nombre'])) {
     $busqueda = $_GET['nombre'];
-    $query = $bd->connect()->prepare('SELECT * FROM articulos WHERE nombre like ?', [
+    $query = $bd->connect()->prepare('SELECT * FROM articulos WHERE nombre like ? or descripcion like ? or sn like ?', [
         PDO::ATTR_CURSOR => PDO::CURSOR_SCROLL,
     ]);
-    $parametros = ["%$busqueda%"];
+    $parametros = ["$busqueda%","%$busqueda%","%$busqueda%"];
     $query->execute($parametros);
     echo json_encode($query->fetchAll());
     /* echo json_encode($query->fetchAll()); */
