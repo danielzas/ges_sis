@@ -75,18 +75,20 @@
             include 'stock_info_listar_articulos.php';
             ?>
           </table>
+
           <div class="paginacion" id="paginacion">
-          <ul id="paginacionLista">
+            <div id="buttons_next_previus"> <button onclick="nextPage()">Siguiente</button></div>
+            <!--  <ul id="paginacionLista"> -->
             <?php
-            if (isset($num_paginas)) {
+            /* if (isset($num_paginas)) {
               $p = 1;
               while ($p <= $num_paginas) {
                 echo '<li><a href="stock_info.php?pagina='.$p.'">'.$p.'</a></li>';
                 $p++;
               }
-            }
+            } */
             ?>
-            </ul>
+            <!--  </ul> -->
           </div>
         </div>
         <div class="stock__total">
@@ -106,6 +108,7 @@
         </div>
 
       </div>
+      <div id='buttons_next_previus'></div>
       <script src="js/search_listado_stock.js"></script>
       <!--fin pagina stock-->
   </main>

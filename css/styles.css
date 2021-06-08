@@ -81,8 +81,15 @@ button:hover,input:hover,input:focus,select:hover
 .paginacion
 {
    text-align: center;
-   color:rgb(17, 106, 165);
+   margin-bottom: 3%;
    
+}
+
+.paginacion #buttons_next_previus button
+{
+   width: 10vw;
+   height: 2.5vh;
+   font-size: 0.8rem;
 }
 .pagina ul{
     display: flex;
