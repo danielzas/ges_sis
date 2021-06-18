@@ -46,33 +46,44 @@
                     <h2 class="movimientos--title">Nuevo Movimiento</h2>
                     <div class="movimientos--item">
                         <div class="item--col">
-                            <label for="">Nombre:</label>
-                            <input type="text" name="nombre">
-                        </div>
-                        <div class="item--col">
                             <label for="">SN:</label>
                             <input type="text" name="sn">
                         </div>
+                        <div class="item--col">
+                            <label for="">Nombre:</label>
+                            <input type="text" name="nombre">
+                        </div>
                     </div>
-                    <div class="">
-                        <label for="">Destino:</label>
-                        <input type="text" name="descripcion">
+                    <div class="movimientos--item">
+                        <div class="">
+                            <label for="">Destino:</label>
+                            <input type="text" name="descripcion">
+                        </div>
+                        <div class="">
+                            <label for="">Sector:</label>
+                            <input type="text" name="descripcion">
+                        </div>
                     </div>
-                    <div class="">
-                        <label for="">Sector:</label>
-                        <input type="text" name="descripcion">
+                    <div class="movimientos--item">
+                        <div class="">
+                            <label for="">Operación:</label>
+                            <select id="tipo" name="tipo">
+                                <option disabled selected>----seleccionar----</option>
+                                <option value="despachado">Despachado</option>
+                                <option value="reservado">Reservado</option>
+                                <option value="prestado">Prestado</option>
+                            </select>
+                        </div>
+                        <div class="">
+                        <label for="">Fecha:</label>
+                        <input type="date" name="fecha_inicio" id="fecha_inicio">
+                        </div>
+                        <div class="">
+                        <label for="">Fecha Fin:</label>
+                        <input type="date" name="fecha_fin" id="fecha_fin">
+                        </div>
                     </div>
-                    <div class="">
-                        <label for="">Destino:</label>
-                        <select id="tipo" name="tipo">
-                            <option selected disabled>Seleccionar</option>
-                            <?php
-                            include_once './array_tipos.php';
-                            dibujarSelect();
-                            ?>
-                        </select>
-                    </div>
-                    <div class="">
+                    <div class="movimientos--item">
                         <button type="submit" name="submit" value="alta">Guardar</button>
                     </div>
                 </div>
