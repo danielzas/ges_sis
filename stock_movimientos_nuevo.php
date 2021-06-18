@@ -54,29 +54,38 @@
                             <input type="text" name="sn">
                         </div>
                     </div>
-                    <div class="">
-                        <label for="">Destino:</label>
-                        <input type="text" name="descripcion">
+                    <div class="movimientos--item">
+                        <div class="item--col">
+                            <label for="">Destino:</label>
+                            <input type="text" name="descripcion">
+                        </div>
+
+                        <div class="item--col">
+                            <label for="">Sector:</label>
+                            <input type="text" name="descripcion">
+                        </div>
                     </div>
-                    <div class="">
-                        <label for="">Sector:</label>
-                        <input type="text" name="descripcion">
+                    <div class="movimientos--item">
+                        <div class="item--col">
+                            <label for="">Destino:</label>
+                            <select id="tipo" name="tipo">
+                                <option selected disabled>Seleccionar</option>
+                                <?php
+                                include_once './array_tipos.php';
+                                dibujarSelect();
+                                ?>
+                            </select>
+                        </div>
                     </div>
-                    <div class="">
-                        <label for="">Destino:</label>
-                        <select id="tipo" name="tipo">
-                            <option selected disabled>Seleccionar</option>
-                            <?php
-                            include_once './array_tipos.php';
-                            dibujarSelect();
-                            ?>
-                        </select>
-                    </div>
-                    <div class="">
-                        <button type="submit" name="submit" value="alta">Guardar</button>
-                    </div>
+                    <div class="movimientos--item">
+                            <div class="item--col">
+                                <button type="submit" name="submit" value="alta">Guardar</button>
+                            </div>
+                        </div>
                 </div>
-            </form>
+
+        </div>
+        </form>
         </div>
     </main>
 </body>

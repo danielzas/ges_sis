@@ -9,7 +9,7 @@ if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
 }
 //////////////variables paginacion///////////
 var pageNumber = 1; //numero de pagina de inicio
-var pageSize = 2; //eltos x pagina
+var pageSize = 5; //eltos x pagina
 var articulosHtml = "";
 var pagination;
 var arr;
@@ -143,7 +143,7 @@ function mostrarArticulos() {
     cantidad++;
     row = document.createElement("tr");
     let c2=1;
-    while(c2<=5)
+    while(c2<=6)
     {
       data = document.createElement("td");
       info = document.createTextNode(art[c2]);
@@ -171,7 +171,7 @@ function mostrarArticulos() {
             ? document.createTextNode("Si")
             : document.createTextNode("No");
         info.appendChild(info_txt);
-      } else if (c2 == 5) {
+      } else if (c2 == 6) {
         info = document.createTextNode("No"); //sobreescribo la variable info antes creada
       }
       /********************* */

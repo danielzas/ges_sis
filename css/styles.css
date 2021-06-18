@@ -32,7 +32,7 @@ a:hover
 
 h2{
     padding: 0;
-    margin: 0;
+    margin: 3vh 0 0 0 ;
     font-weight: 400;
     font-size: 2rem;
 }
@@ -77,6 +77,7 @@ button:hover,input:hover,input:focus,select:hover
     background-color: black;
     color:white;
 }
+
 
 .paginacion
 {
@@ -271,7 +272,48 @@ table  td
     margin:3%;
 }
 
+.stock__alta--item button
+{
+    margin-top: 3vh;
+    background-color: black;
+    color:white;
+    width: 25vw;
+}
 
+.stock__alta--item button:hover
+{
+    transition-duration: 0.3s;
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+}
+
+.send_message
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#mensaje
+{
+    width: 600px;
+}
+
+.stock__alta--mensaje
+{
+ text-align: center;
+ font-weight:500;
+ position: static;
+}
+
+.exito
+{
+    color:green;
+}
+
+.error
+{
+    color:red;
+}
 
 form
 {
@@ -304,7 +346,7 @@ form
 
 .movimientos--item
 {
-    width: 100%;
+  
   display: flex;
   margin: 0 auto;
    
@@ -321,6 +363,7 @@ form
 {
     display: flex;
     flex-direction: column;
+    margin:5px;
 }
 
 

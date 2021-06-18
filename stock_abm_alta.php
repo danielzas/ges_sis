@@ -42,24 +42,24 @@
         </nav>
 
         <div class="pagina">
-        <form action="./model/abm.php" method="POST">
+        <form action="model/abm.php" method="POST" id="form_alta">
             <div class="stock__alta">
             <h2>Alta de Stock</h2>
                 <div class="stock__alta--item">
                     <label for="">Nombre:</label>
-                    <input type="text" name="nombre">
+                    <input type="text" id="nombre">
                 </div>
                 <div class="stock__alta--item">
                     <label for="">SN:</label>
-                    <input type="text" name="sn"> 
+                    <input type="text" id="sn"> 
                 </div>
                 <div class="stock__alta--item">
                     <label for="">Descripción:</label>
-                    <input type="text" name="descripcion">
+                    <input type="text" id="descripcion">
                 </div>
                 <div class="stock__alta--item">
                     <label for="">Tipo:</label>
-                   <select id="tipo" name="tipo">
+                   <select id="tipo" id="tipo">
                    <option selected disabled>Seleccionar</option>
                    <?php
               include_once './array_tipos.php';
@@ -67,13 +67,19 @@
               ?>
                    </select>
                 </div>
-                <div class="stock__alta--item">
-                <button type="submit" name="submit" value="alta">Guardar</button>
+                <div class="stock__alta--item send_message">
+                <button type="submit" name="submit" value="alta" id="guardar_art">Guardar</button>
+                <!-- <p class="stock__alta--mensaje" id="mensaje"></p>
+                </div> -->
+                <div id="mensaje">
+                '<p class="stock__alta--mensaje" id="mensaje_msj"></p>';
                 </div>
             </div>
         </form>
         </div>
     </main>
+    
+    <script src="js/stock_alta.js"></script>
 </body>
 
 </html>
